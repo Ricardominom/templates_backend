@@ -5,7 +5,7 @@ const nodemailer_1 = require("../config/nodemailer");
 class AuthEmail {
     static sendConfirmationEmail = async (user) => {
         const info = await nodemailer_1.transporter.sendMail({
-            from: 'TemplatesApp <admin@templates.com>',
+            from: 'TemplatesApp <rdmm.291191@gmail.com>',
             to: user.email,
             subject: 'TemplatesApp - Confirm you account',
             text: 'TemplatesApp - Confirm your account',
@@ -20,7 +20,7 @@ class AuthEmail {
     };
     static sendPasswordResetToken = async (user) => {
         const info = await nodemailer_1.transporter.sendMail({
-            from: 'TemplatesApp <admin@templates.com>',
+            from: 'TemplatesApp <rdmm.291191@gmail.com>',
             to: user.email,
             subject: 'TemplatesApp - Reset your password',
             text: 'TemplatesApp - Reset your password',
